@@ -2,25 +2,18 @@
 
 This repo contains the typescript starter code for the "Notely" application for the "Learn CICD" course on [Boot.dev](https://boot.dev).
 
-## Local Development
+## What have I done in this project:
 
-Make sure you're on Node version 22+.
-
-Create a `.env` file in the root of the project with the following contents:
-
-```bash
-PORT="8080"
-```
-
-Run the server:
-
-```bash
-npm install
-npm run dev
-```
-
-_This starts the server in non-database mode._ It will serve a simple webpage at `http://localhost:8080`.
-
-You do _not_ need to set up a database or any interactivity on the webpage yet. Instructions for that will come later in the course!
+1. Set up a continuous integration pipeline with GitHub Actions that ensures new PRs pass certain checks before they are merged to main:
+   a. Unit tests
+   b. Formatting checks
+   c. Linting checks
+   d. Security checks
+2. Configured a cloud-based SQLite database hosted on Turso
+3. Set up a continuous deployment pipeline with GitHub Actions that does the following whenever changes are merged into main:
+   a. Builds a new server
+   b. Builds a new Docker image for the server
+   c. Pushes the Docker image to the Google Artifact Registry
+   d. Deploys a new Cloud Run revision with the new image and serves the app to the public internet
 
 Galym's version of Boot.dev's Notely app.
