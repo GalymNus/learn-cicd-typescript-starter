@@ -1,6 +1,4 @@
-![tests status](https://github.com/GalymNus/learn-cicd-typescript-starter/actions/workflows/ci.yml/badge.svg)
-
-# learn-cicd-typescript-starter (Notely)
+# learn-cicd-typescript-starter (Notely) ![tests status](https://github.com/GalymNus/learn-cicd-typescript-starter/actions/workflows/ci.yml/badge.svg)
 
 This repo contains the typescript starter code for the "Notely" application for the "Learn CICD" course on [Boot.dev](https://boot.dev).
 
